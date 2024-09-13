@@ -1,0 +1,12 @@
+# Original tutorial is for Linux on x86
+# We used VNC-Server-7.7.0-Linux-ARM64.deb instead
+
+VER=7.7.0
+wget https://downloads.realvnc.com/download/file/vnc.files/VNC-Server-$VER-Linux-ARM64.deb
+
+sudo dpkg -i ./VNC-Server-*-Linux-ARM64
+
+sudo systemctl enable vncserver-virtuald.service
+sudo systemctl start vncserver-virtuald.service
+sudo systemctl enable vncserver-x11-serviced.service
+sudo systemctl start vncserver-x11-serviced.service
