@@ -6,14 +6,10 @@ The following class diagram is used:
 
 classDiagram
 class I2CHelper {
-    <<Singleton>>
-    +static I2CHelper& getInstance()
-    +void setAddress(uint8_t address)
-    +template <typename T> T readRegister(uint16_t reg)
-    +template <typename T> void writeRegister(uint16_t reg, T value)
-    -I2CHelper()
+    +I2CHelper(TwoWire* wire)
+    +template <typename T> T readRegister(uint8_t address, uint16_t reg)
+    +template <typename T> void writeRegister(uint8_t address, uint16_t reg, T value)
     -TwoWire* _wire
-    -uint8_t _address
 }
 
 class VL6180X {
