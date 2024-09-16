@@ -2,6 +2,8 @@
 
 The following class diagram is used:
 
+```mermaid
+
 classDiagram
 class I2CHelper {
     <<Singleton>>
