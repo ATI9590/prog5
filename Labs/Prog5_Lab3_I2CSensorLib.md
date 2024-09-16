@@ -13,7 +13,7 @@ class I2CHelper {
 }
 
 class VL6180X {
-    +VL6180X(uint8_t address = 0x29, TwoWire* wire = &Wire)
+    +VL6180X(uint8_t address = 0x29, I2CHelper i2cHelper = I2CHelper(&Wire))
     +bool begin()
     +bool init()
     +bool configureDefault()
@@ -25,8 +25,8 @@ class VL6180X {
     +uint8_t getRange()
     +void clearInterrupt()
     -uint8_t _address
-    -TwoWire* _i2c
     -I2CHelper _i2cHelper
+    -static const uint8_t DEFAULT_SENSOR_ADDRESS
     -static const uint16_t IDENTIFICATION__MODEL_ID
     -static const uint16_t SYSRANGE__START
     -static const uint16_t ... (other register addresses)
