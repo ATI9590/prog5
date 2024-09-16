@@ -1,3 +1,7 @@
+## Class diagram Sensor Library (ToF)
+
+The following class diagram is used:
+
 classDiagram
 class I2CHelper {
     <<Singleton>>
