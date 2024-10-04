@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++: cpp Build and debug active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "cppStandard": "c++17",
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "C/C++: cpp build active file"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [
+        ""
+      ],
+      "stopAtEntry": true,
+      "cwd": "/Users/jakorten/iCloud Drive (archief)/Documents/Documenten - MacBook Pro van J.A./HAN/HAN Engineering/S4 Software Engineering/Presentaties/s4_embeddedsoftwareprogramming/Code Examples/AbstractInterfaces",
+      "environment": [],
+      "program": "/Users/jakorten/iCloud Drive (archief)/Documents/Documenten - MacBook Pro van J.A./HAN/HAN Engineering/S4 Software Engineering/Presentaties/s4_embeddedsoftwareprogramming/Code Examples/AbstractInterfaces/build/Debug/outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "externalConsole": true
+    }
+  ]
+}
